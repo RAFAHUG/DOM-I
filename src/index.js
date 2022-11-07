@@ -39,4 +39,153 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+console.log('project wired!') ;
+
+const container = document.querySelector(".container") ; 
+
+console.log(container) ; 
+
+const header = document.querySelector("header") ; 
+
+console.log(header) ; 
+
+const nav = header.querySelectorAll("nav a") ; 
+
+console.log(nav) ; 
+
+const headerImg = header.querySelector("#logo-img") ; 
+
+console.log(headerImg) ; 
+
+nav[0].textContent = "Services" ; 
+
+nav[1].textContent = "Product" ;
+
+nav[2].textContent = "Vision" ; 
+
+nav[3].textContent = "Features" ; 
+
+nav[4].textContent = "About" ;
+
+nav[5].textContent = "Contact" ; 
+
+headerImg.src = 'http://localhost:9000/img/logo.png' ; 
+
+nav.forEach ( anchor => anchor.style.fontStyle = "italic" ) ; 
+
+const seccionOne = document.querySelector(".cta") ;
+
+console.log(seccionOne) ;
+
+const h1 = seccionOne.querySelector("h1") ; 
+
+console.log(h1) ; 
+
+const button = seccionOne.querySelector("button") ;
+
+console.log(button) ; 
+
+const seccionImg = seccionOne.querySelector("#cta-img") ;
+
+console.log(seccionImg) ; 
+
+h1.textContent = "DOM Is Awesome" ; 
+
+button.textContent = "Get Started" ; 
+
+seccionImg.src = "http://localhost:9000/img/cta.png" ; 
+
+const mainContent = document.querySelector(".main-content") ;
+
+console.log(mainContent) ; 
+
+const topContent = mainContent.querySelector(".top-content") ; 
+
+console.log(topContent) ; 
+
+const divTop = topContent.querySelector(".text-content") ;
+
+console.log(divTop) ; 
+
+const h4 = divTop.querySelector("h4") ;
+
+const p = divTop.querySelector("p") ;
+
+console.log(h4) ; 
+console.log(p) ; 
+
+h4.textContent = "FEATURES" ;
+
+p.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." ; 
+
+const divTopSecond = divTop.nextElementSibling ; 
+
+console.log(divTopSecond) ; 
+
+const h4Second = divTopSecond.querySelector("h4") ; 
+
+const pSecond = divTopSecond.querySelector("p") ; 
+
+console.log(h4Second, pSecond) ; 
+
+h4Second.textContent = "ABOUT" ;
+
+pSecond.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." ; 
+
+const mainContentImg = mainContent.querySelector("img") ; 
+console.log(mainContentImg) ; 
+
+mainContentImg.src = "http://localhost:9000/img/accent.png" ;
+
+const bottomContent = mainContent.querySelector(".bottom-content") ; 
+
+console.log(bottomContent) ; 
+
+const divBottom = bottomContent.querySelector(".text-content") ;
+
+console.log(divBottom) ; 
+
+const h4Third = divBottom.querySelector("h4") ; 
+
+const pThird = divBottom.querySelector("p") ;
+
+h4Third.textContent = "SERVICES" ; 
+pThird.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." ; 
+
+const divBottomSecond = divBottom.nextElementSibling ; 
+
+const h4Four = divBottomSecond.querySelector("h4") ; 
+const pFour = divBottomSecond.querySelector("p") ;
+
+h4Four.textContent = "PRODUCT" ; 
+pFour.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." ; 
+
+const divBottomThird = divBottomSecond.nextElementSibling ; 
+
+const h4Five = divBottomThird.querySelector("h4") ; 
+const pFive = divBottomThird.querySelector("p") ; 
+
+h4Five.textContent = "VISION" ; 
+pFive.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis." ; 
+
+const contact = document.querySelector(".contact") ; 
+
+console.log(contact) ; 
+
+const h4Six = contact.querySelector("h4") ; 
+const pSix = contact.querySelector("p") ;
+const pSeven = pSix.nextElementSibling ; 
+const pEigth = pSeven.nextElementSibling ; 
+
+h4Six.textContent = "CONTACT" ; 
+pSix.textContent = "123 Way 456 Street Somewhere, USA" ; 
+pSeven.textContent = "1 (888) 888-8888" ; 
+pEigth.textContent = "sales@greatidea.io" ; 
+
+const footer = document.querySelector("footer") ; 
+console.log(footer) ; 
+
+const anchorFooter = footer.querySelector("a") ; 
+console.log(anchorFooter) ; 
+
+anchorFooter.textContent = "Copyright Great Idea! 2021 " ; 
